@@ -7,47 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
+     <div id="loader">
+        <img src="./images/only-ps-logo.png" class="loader-logo" alt="PlayStation">
+     </div>  
+    
     <div id="main">
       
         <header>
-           <span>  <video autoplay muted loop id="logo" src="/logo.mp4"></video>
+           <span>  <video autoplay muted loop id="logo" src="./video/logo.mp4"></video>
         <h4>PLAY STATION</h4>
     </span>
-           
+
             <nav>
-                 <video autoplay muted loop class="nav-bg-video" src="/nav video.mp4"></video>
+                 <video autoplay muted loop class="nav-bg-video" src="./video/nav video.mp4"></video>
            <a href="index.html">HOME</a>
            <a href="games.html">GAMES</a>
-           <a href="">CONTROLLERS</a>
-           <a href="">NEWS</a>
-           <a href="">COMMUNITY</a>
-           <a href="">ABOUT US</a>
+           <a href="accessories.html">ACCESSORIES</a>
+           <a href="news.html">NEWS</a>
+           <a href="community.html">COMMUNITY</a>
+           <a href="about.html">ABOUT US</a>
         </nav>
         </header>
         <main>
         <div class="home-image">
-             <img id="home-img" src="/4K Wallpapers of Technology, Windows 11, Apple macOS, iOS (1).jpg" alt="">
+             <img id="home-img" src="./images/4K Wallpapers of Technology, Windows 11, Apple macOS, iOS (1).jpg" alt="">
             <div class="img-text">
                   <h1>PLAY STATION</h1>
                   <p id="beyond">BEYOND LIMITS</p>
                   <p id="p1">PlayStation breaks the boundaries of reality with breathtaking visuals,<br>lightning speed, and deep immersion.It connects a global community of gamers <br> to extraordinary adventures that redefine the future of play.</p>
                   <div class="btn-container">
-                    <button class="game-btn"><a href=""></a>GAMES VAULT</button>
-                  <button class="game-cn"><a href=""></a>COMMUNITY</button>
+                    <a href="./games.html" style="text-decoration: none;">
+                        <button class="game-btn">GAMES VAULT</button>
+                    </a>
+                    <a href="./community.html" style="text-decoration: none;">
+                        <button class="game-cn" >COMMUNITY</button>
+                    </a>
                   </div>
             </div>
         </div>
            
            
            <div class="all-cards">
-            <video id="h-c-v" autoplay muted loop src="/home intro.mp4"></video>
+            <video id="h-c-v" autoplay muted loop src="./video/home intro.mp4"></video>
              <div class="home-card-text">
                 <h1>FEATURED GAMES</h1>
              </div>
                   <div class="home-card">
                         <div class="h-cards">
-                            <img src="/h-img-1.jpg" alt="">
+                            <img src="./images/h-img-1.jpg" alt="">
                              <div class="shadow-overlay"></div>
                             <div class="h-g-text">
                                <h3>Black Myth Wukong
@@ -83,7 +90,7 @@
               </div>
               <div class="wol">
               
-               <img src="/wol.png" alt="">
+               <img src="./images/wol.png" alt="">
                
                <div class="wol-text">
                   <h2>Stunning games</h2>
@@ -93,7 +100,7 @@
               </div>
               <div class="h2-g-info">
                   <div class="spiderman-info">
-                     <img src="/spider-man.png" alt="">
+                     <img src="./images/spider-man.png" alt="">
                      <div class="spiderman-text">
                         <h2>Lightning speed</h2>
                         <p>Jump into the action and keep play moving with<br>ultra-fast,integratedconsole technology.</p>
@@ -101,7 +108,7 @@
                      </div>
                   </div>
                   <div class="spiderman-info">
-                     <img src="/gost of yote.png" alt="">
+                     <img src="./images/gost of yote.png" alt="">
                      <div class="spiderman-text">
                         <h2>Breathtaking immersion</h2>
                         <p>Put yourself at the heart of the game with responsive controls,<br>360-degree audio1, and intricate graphical detail.</p>
@@ -117,7 +124,7 @@
         <!-- Top Section: Logo & Breadcrumbs -->
         <div class="footer-top">
             <div class="ps-logo">
-                   <img id="ps-logo" src="/ps-logo (2).png" alt="">
+                   <img id="ps-logo" src="./images/ps-logo (2).png" alt="">
                 </svg>
             </div>
             <div class="breadcrumbs">

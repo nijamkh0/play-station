@@ -1,19 +1,19 @@
 @font-face {
-    font-family:ab ;
-    src: url(/PressStart2P-Regular.ttf);
+    font-family:'ab';
+    src: url('./Font/PressStart2P-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: tc;
-    src: url(/technor.otf);
+    font-family:'tc';
+    src: url('./Font/technor.otf') format('truetype');
 }
 
 @font-face {
-    font-family: bs;
-    src: url(/Bonsad-Regular.otf);
+    font-family:'bs';
+    src: url('./Font/Bonsad-Regular.otf') format('truetype');
 }
 @font-face {
-    font-family:ba ;
-    src: url(/Blocksmith.otf);
+    font-family:'ba';
+    src: url('./Font/Blocksmith.otf') format('truetype');
 }
 * {
     padding: 0;
@@ -33,12 +33,14 @@ body {
     overflow-x: hidden;
 }
 
+
 #main {
     height: 100%;
     width: 100%;
 }
 
 header {
+    height: 100px;
     padding: 10px 20px;
     background-color: rgba(9, 18, 69, 0.419);
     display: flex;
@@ -49,15 +51,14 @@ header {
 }
 
 header > span, header > label {
+    font-size: 25px;
     display: flex;
     align-items: center;
 }
 
-
-
 #logo {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -65,7 +66,7 @@ header > span, header > label {
 nav {
     display: flex;
     gap: 15px;
-    padding: 20px 20px;
+    padding: 30px 25px;
    position: relative;
     overflow: hidden;  
     /* background-color: red; */
@@ -74,20 +75,18 @@ nav {
 }
 
 nav a {
-    font-size: 13px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
     font-weight: 400;
     z-index: 2;
     box-shadow: 10px 10px  15px rgba(24, 24, 24, 0.514);
-    
-    
 }
 
 nav video{
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-
+    border-top-left-radius: 55px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 45px;
 }
 
 .nav-bg-video{
@@ -101,21 +100,19 @@ nav video{
     z-index: 1;
 }
 span{
-    gap: 10px;
+    gap: 20px;
 }
 
  #home-img{
-    height: 500px;
+    height: 700px;
     width: 100%;
     object-fit: cover;
 }
 
 .home-image{
     position: relative;
-    height: 500px;
+    height: 700px;
     width: 100%;
-    
-
 }
 
 .img-text{
@@ -123,7 +120,7 @@ span{
     top: 40%;
     left: 35%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 40px;
     font-family: ab;
     margin-top: 40px;
     
@@ -134,19 +131,18 @@ span{
 
 
 #beyond {
-    font-family: ab;
     margin-top: 15px;
     margin-bottom: 15px;
     font-family: ba;
     letter-spacing: 5px;
-    font-size: 35px;
+    font-size: 50px;
 
     
 }
 
 #p1{
     font-family: tc;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 200;
      
 }
@@ -154,9 +150,9 @@ span{
 
 .game-btn {
     position: relative;
-    padding: 10px 15px;
+    padding: 15px 20px;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -197,9 +193,9 @@ span{
 }
 .game-cn{
      position: relative;
-    padding: 10px 15px;
+    padding: 15px 20px;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -211,6 +207,7 @@ span{
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+    
 }
 
 .game-cn:hover {
@@ -247,7 +244,7 @@ span{
 
 .all-cards{
    position: relative;
-    height: 550px;
+    height: 750px;
     width: 100%;
     background-color: rgb(16, 23, 70);
     margin-top: 5px;
@@ -265,7 +262,7 @@ span{
 .h-cards{
     position: relative;
     /* background-color: #6a11cb; */
-    height: 400px;
+    height: 550px;
     width: 30%;
     border-radius: 15px;
     box-shadow: inset 30px 10px 40px rgb(20, 20, 20);
@@ -279,10 +276,11 @@ span{
     /* background-color: rgb(14, 11, 78); */
     padding: 10px ;
     padding-left: 60px;
-    font-size: 20px;
+    font-size: 25px;
     z-index: 2;
     font-family:ba;
     letter-spacing: 5px;
+    margin-bottom: 30px;
 }
 
 .h-cards img {
@@ -302,13 +300,13 @@ span{
     bottom: 0;
     width: 100%;
     height: 100%;
-    box-shadow: inset 15px 20px 50px rgb(0, 0, 0);
+    box-shadow: inset 15px 20px 90px rgb(0, 0, 0);
     pointer-events: none;
 }
 
 .h-cards h3{
       font-family: tc;
-    font-size: 18px;
+    font-size: 25px;
     position: absolute;
     z-index: 2;
     align-items: center;
@@ -316,12 +314,11 @@ span{
     left: 14px;
     right: 0px;
     text-align: left;
-    bottom: 50px;
+    bottom: 60px;
     text-shadow: 0px 10px 4px rgb(0, 0, 0);
 }
 
 .h-cards>h3{
-  
          position:static;
          right: 100px;
 }
@@ -339,7 +336,7 @@ span{
 .h-img-p{
     font-family: tc;
     position: static;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 400;
     z-index: 2;
     bottom: 15px;
@@ -376,16 +373,17 @@ body .h-cards:hover{
     opacity:1 !important ;
 }
 
+/* home game info heading  */
+
 #hgi{
     background-color: rgba(23, 23, 24, 0.723);
-    height: 1050px;
+    height: 1170px;
     width: 100%;
-    
 }
 
 .hgi-heading{
     padding: 10px 10px;
-    height: 140px;
+    height: 170px;
     width: 100%;
     background-color:  rgba(23, 23, 24, 0.723);
     text-align: center;
@@ -395,12 +393,14 @@ body .h-cards:hover{
 .hgi-heading>h2{
     margin-top: 30px;
     margin-bottom: 4px;
-    font-size: 30px;
+    font-size: 37px;
     text-transform: uppercase;
 }
 .hgi-heading>p{
-    font-size: 13px;
+    font-size: 17px;
 }
+
+ /* home wol img and text */
 
 .wol{
     position: relative;
@@ -408,7 +408,7 @@ body .h-cards:hover{
     top: 4%;
     z-index: 1 ;
     /* background-color: #6a11cb; */
-    height: 350px;
+    height: 390px;
     width: 90%;
     
 }
@@ -420,7 +420,7 @@ body .h-cards:hover{
 }
 
 .wol-text{
-    left: 35px;
+    left: 45px;
     position: relative;
     bottom: 250px;
 }
@@ -428,26 +428,26 @@ body .h-cards:hover{
     text-transform: uppercase;
     
     color: rgb(0, 0, 0);
-   font-size: 25px;
+   font-size: 35px;
    font-weight: 600;
 }
 .wol-text>p{
     margin-top: 10px;
     color: black;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
 }
 
-
+/* spider man info and ghost info cards and text */
 
 .spiderman-info{
     position: relative;
     /* background-color: black; */
-    height: 430px;
-    width: 480px;
+    height: 490px;
+    width: 650px;
     z-index: 1;
     top: 70px;
-    left: 6%;
+    left: 6%;    
 }
 
 .spiderman-info>img{
@@ -459,11 +459,12 @@ body .h-cards:hover{
 }
 .spiderman-text{
     position: relative;
-    bottom: 140px;
+    bottom: 130px;
     left: 0px;
    
 }
 .spiderman-text>h2{
+    font-size: 25px;
     text-transform: uppercase;
     color: black;
     text-align: center;
@@ -474,13 +475,16 @@ body .h-cards:hover{
     color: black;
     text-align: center;
     left: 3px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
 }
+
+/* home game info icons */
+
 #wol-icon{
     position: relative;
-    bottom: 180px;
-    left: 50px;
+    bottom: 220px;
+    left: 30px;
     height: 70px;
     width: 70px;
 }
@@ -489,7 +493,7 @@ body .h-cards:hover{
     height: 70px;
     width: 70px;
     bottom: 150px;
-    left: 180px;
+    left: 270px;
 }
 
 .h2-g-info{
@@ -501,9 +505,10 @@ body .h-cards:hover{
     height: 70px;
     width: 70px;
     bottom: 150px;
-    left: 200px;
+    left: 285px;
 }
 
+/* footer */
 
 .ps-footer {
     background-color: #00439c; 
@@ -596,10 +601,14 @@ body .h-cards:hover{
     text-decoration: underline;
 }
 
+/* 2nd games pages  */
+
+/* Games home 1st page  */
+
 .game-h{
     position: relative;
     /* background-color: red; */
-    height: 500px;
+    height: 650px;
     width: 100%;
 }
 .game-h-v{
@@ -625,16 +634,18 @@ body .h-cards:hover{
 }
 
 .game-h-text{
+    font-size: 23px;
     position: relative;
     bottom: 350px;
     left: 9px;
     text-align: center;
     z-index: 3;
     font-weight: 200;
+    margin-top: -70px;
 }
 
 .ght-icon{
-    font-size: 55px;
+    font-size: 60px;
     font-weight: 100;
 }
 
@@ -642,7 +653,7 @@ body .h-cards:hover{
     width: 300px;
       position: relative;
     bottom: 350px;
-    left: 410px;
+    left: 590px;
     text-align: center;
     z-index: 3;
     margin-top: 20px;
@@ -651,11 +662,12 @@ body .h-cards:hover{
 }
 
 .ghb{
+    font-size: ;
     color: white;
     background-color: rgba(43, 43, 49, 0.462);
     border: 0px solid rgb(45, 42, 42);
-    border-radius: 20px;
-    padding: 7px 10px;
+    border-radius: 30px;
+    padding: 15px 15px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      cursor: pointer;
 }
@@ -663,8 +675,8 @@ body .h-cards:hover{
      color: rgb(0, 0, 0);
     background-color: rgba(253, 253, 253, 0.462);
     border: 0px solid rgb(45, 42, 42);
-    border-radius: 20px;
-    padding: 7px 10px;
+    border-radius: 30px;
+    padding: 10px 15px;
     
 }
 
@@ -676,13 +688,16 @@ body .h-cards:hover{
     transition: all 0.5s ease;
 }
 
+/* Games 2nd page games gallary  */
+
 .games-gallary{
-    height: 2000px;
+    height: 3000px;
     width: 100%;
-    background-color: crimson;
+    background-color:  #131415;
 }
+
 .gg-header{
-    background-color: #2575fc;
+    background-color: #0b1d3a;
     height: 150px;
     text-align: center;
 }
@@ -695,60 +710,67 @@ body .h-cards:hover{
     letter-spacing: 2px;
 }
 
+/* GTA6  */
+
 .gta6{
     position: relative;
-    height: 200px;
+    height: 300px;
     width: 100%;
 }
 #gta6-back{
     position: relative;
     object-fit: cover;
-    height: 400px;
+    height: 420px;
     width: 100%;
 }
+
 #gta6-yt{
     position: relative;
     z-index: 2;
-    bottom: 90px;
+    bottom: 80px;
     left: 60px;
     border-radius: 15px;
     box-shadow: 0px 10px 10px black ;
-    height: 200px;
+    height: 270px;
 }
 
 .gta6-y>i{
     position: relative;
-    bottom: 170px;
-    right: 140px;
+    bottom: 185px;
+    right: 210px;
     z-index: 3;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #gta-yt-logo{
     position: relative;
-    height: 27px;
+    height: 30px;
     width: auto;
     z-index: 3;
-    bottom: 93px;
-    right: 58px;
+    bottom: 85px;
+    right: 80px;
 }
 .gta6-text{
     position: relative;
-    left: 45%;
-    bottom: 195px;
+    left: 40%;
+    bottom: 260px;
     width: auto;
 }
 .gta6-text>h3{
     
     font-weight: 500;
-    font-size: 30px;
+    font-size: 35px;
 }
 .gta6-text>p{
+    font-size: 20px;
     margin-top: 5px;
     width: 50%;
     font-weight: 300;
 }
-.gta6-text>button{
+.gallary-btn{
+    font-size: 18px;
+    height: 45px;
+    width: 160px;
    padding: 7px 10px;
     border-radius: 20px;
     border: none;
@@ -758,9 +780,2410 @@ body .h-cards:hover{
     font-weight: 600;
 }
 .gallary-btn:hover{
-   transform: translateY(-3px);
+   transform: translateY(-4px);
+   box-shadow: 0px 5px 10px black;
 }
 .gallary-btn:active{
     scale: 0.95;
 }
+
+/* wolwerin  */
+
+.wolwerin{
+   position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+#wol-back{
+    position: relative;
+    object-fit: cover;
+    height: 420px;
+    width: 100%;
+    top: 400px;
+}
+
+.wol-yt{
+    position: relative;
+    z-index: 2;
+    top: 299px;
+    left: 960px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px black ;
+    height: 270px;
+}
+.wol-y>i{
+    position: relative;
+    top: 180px;
+    left: 690px;
+    z-index: 3;
+    font-size: 50px;
+}
+#wol-yt-logo{
+    position: relative;
+    height: 30px;
+    width: auto;
+    z-index: 3;
+     top: 295px;
+    left: 820px;
+}
+.wolwerin-text{
+    position: relative;
+    left: 50px;
+    top: 130px;
+    width: auto;
+}
+.wolwerin-text>h3{
+    
+    font-weight: 500;
+    font-size: 35px;
+}
+.wolwerin-text>p{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 50%;
+    font-weight: 300;
+}
+
+/* black myth wukong */
+.FL007{
+   position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+#fl-back{
+    position: relative;
+    object-fit: cover;
+    height: 420px;
+    width: 100%;
+    top:800px;
+}
+.fl-yt{
+    position: relative;
+    z-index: 2;
+    top: 720px;
+    bottom: 80px;
+    left: 60px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px black ;
+    height: 270px;
+}
+
+.fl-y>i{
+    position: relative;
+    top: 610px;
+    bottom: 0px;
+    right: 210px;
+    z-index: 3;
+    font-size: 50px;
+}
+
+#fl-yt-logo{
+    position: relative;
+    height: 30px;
+    width: auto;
+    z-index: 3;
+    top: 710px;
+    bottom: 0px;
+    right: 80px;
+}
+
+
+.fl-text{
+    position: relative;
+    left: 40%;
+    top: 530px;
+    width: auto;
+}
+.fl-text>h3{
+    
+    font-weight: 500;
+    font-size: 35px;
+}
+.fl-text>p{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 50%;
+    font-weight: 300;
+}
+
+/* EA */
+
+.EA{
+   position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+#EA-back{
+    position: relative;
+    object-fit: cover;
+    height: 420px;
+    width: 100%;
+    top: 1200px;
+}
+.EA-yt{
+    position: relative;
+    z-index: 2;
+    top: 1120px;
+    left: 910px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px black ;
+    height: 270px;
+}
+.EA-y>i{
+    position: relative;
+    top: 1010px;
+    left: 615px;
+    z-index: 3;
+    font-size: 50px;
+}
+.EA-yt-logo{
+    position: relative;
+    height: 30px;
+    width: auto;
+    z-index: 3;
+    top: 1115px;
+    left: 770px;
+}
+.EA-text{
+    position: relative;
+    left: 50px;
+    top: 930px;
+    width: auto;
+}
+.EA-text>h3{
+    
+    font-weight: 500;
+    font-size: 35px;
+}
+.EA-text>p{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 50%;
+    font-weight: 300;
+}
+
+
+
+/* slideshow */
+.slide-a{
+    position: relative;
+    height: 770px;
+    background-color:  rgb(232, 232, 232);
+}
+
+.ssb{
+    position: relative;
+    left: 660px;
+    background-color: #000;
+    color: white;
+}
+
+.ss-h{
+    
+    color: #000;
+    height: 200px;
+    width: 100%;
+   background-color: rgb(232, 232, 232);
+   text-align: center;
+}
+
+.ss-h>h1{
+    font-size: 40px;
+   position: relative;
+   top: 50px;
+   font-weight: 400;
+}
+.ss-h>p{
+   position: relative;
+   top: 55px;
+   font-size: 20px;
+   font-weight: 200;
+}
+.slideshow{
+    position: relative;
+    height: 500px;     
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideshow 10s infinite;   /* pehle 9s tha, ab 18s — dugna slow */
+}
+
+.slide1{ animation-delay: 0s; }
+.slide2{ animation-delay: 6s; }
+.slide3{ animation-delay: 12s; }
+
+@keyframes slideshow{
+    0%{    opacity: 0; }
+    8%{    opacity: 1; }     /* fade in — lamba aur smooth */
+    28%{   opacity: 1; }     /* zyada der tak dikhti rahe */
+    36%{   opacity: 0; }     /* fade out — lamba aur smooth */
+    100%{  opacity: 0; }
+}
+
+::-webkit-scrollbar{ width: 10px; }
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#241633, #b4bbc6);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{ background: #0f0f0f; }
+
+/* web loader */
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+    animation: fadeOutLoader 0.5s ease forwards;
+    animation-delay: 2s;
+}
+
+.loader-logo{
+    width: 130px;                
+    height: auto;
+    filter: invert(1);           
+    animation: blink 1.2s ease-in-out infinite;
+}
+
+@keyframes blink{
+    0%, 100%{ opacity: 1; transform: scale(1); }
+    50%{      opacity: 0.25; transform: scale(0.92); }
+}
+
+@keyframes fadeOutLoader{
+    to{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+/* spaa  */
+
+.spaa{
+    position: relative;
+    height: 600px;
+    width: 100%;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.spaa-back{
+  
+    position: relative;
+      top: 0;
+      bottom: 0;
+      height: 600px;
+      width: 100%;
+    object-fit: cover;
+
+}
+
+.spaa-right{
+    height: 570px;
+    position: relative;
+    bottom: 600px;
+    left: 50%;
+    z-index: 2;
+}
+
+.spaa-text{
+    position: relative;
+    bottom: 1000px;
+    left: 20px;
+}
+
+.spaa-text>h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.spaa-text>p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.spaab{
+    background-color: #000;
+    color: white;
+    position: relative;
+    left: 200px;
+    margin-top: 25px;
+}
+
+
+
+/* discover more games section */
+
+.discover-section{
+    padding: 60px 40px;
+    background: transparent;
+    text-align: center;
+    background-color: white;
+}
+
+.discover-header h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.discover-header p{
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.discover-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.genre-card{
+    position: relative;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genre-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.genre-card::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(113, 111, 111, 0.434);   
+}
+
+.genre-card span{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.genre-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.genre-card:hover img{
+    transform: scale(1.08);
+}
+
+.three{
+    position: relative;
+    left: 285px;
+}
+
+/* test  */
+
+nav a{ position: relative; }
+nav a::after{
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    background: #2575fc;
+    transition: width 0.3s ease;
+}
+nav a:hover::after{ width: 100%; }
+
+
+/* 3rd page access  */
+
+.access-h{
+    height:700px;
+    width: 100%;
+    background-color: red;
+}
+
+.access-h-back{
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.access-h-front{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    object-fit: cover;
+    bottom: 350px;
+    right: 10px;
+}
+.access-h-text{
+    position: relative;
+    bottom: 900px;
+    text-align: center;
+
+}
+.access-h-text>h1{
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.access-h-text>p{
+    font-size: 20px;
+}
+
+.ps-console{
+    margin-top: 5px;
+    height: 750px;
+    width: 100%;
+}
+
+.ps5-console{
+    height: 750px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ps-console-text{
+    position: relative;
+    bottom: 890px;
+    text-align: center;
+}
+
+.ps-console-text>h1{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.ps-console-text>p{
+    font-size: 18px;
+}
+
+.ps-console-right{
+    position: relative;
+    bottom: 700px;
+    left: 850px;
+    font-size: 20px;
+}
+
+.ps-console-right p{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.ps-console-right h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #00439c;
+}
+
+.ps-console-right>p{
+    
+} 
+
+
+.ps-console-right>p{
+    color: #000;
+}
+.ps-console-rb{
+    color: #000;
+}
+.psicon{
+    position: relative;
+    right: 100px;
+    top: 77px;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.ps5-console{
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+}
+
+.ps5-h{
+    margin-top: 200px;
+    position: relative;
+    text-align: center;
+    /* background-color: red; */
+    height: 200px;
+    width: 100%;
+    color: black;
+}
+
+.ps5-h>h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    position: relative;
+    top: 40px;
+}.ps5-h>p{
+    font-size: 18px;
+    position: relative;
+    top: 50px;
+}
+
+.ps5{
+    height: 600px;
+    width: 100%;
+}
+
+.ps-left{
+    position: relative;
+    top: 149px;
+    left: 270px;
+    height: 400px;
+    width: auto;
+}
+.ps-right{
+    position: relative;
+    left: 850px;
+    bottom: 374px;
+    height: 400px;
+    width: auto;
+}
+
+.ps-text{
+    color: #000;
+}
+
+
+.text-left{
+    position: relative;
+    top: 140px;
+    left: 300px;
+}
+.ps5-left>h3{
+    font-size: 27px;
+    margin-top: 20px;
+    position: relative;
+    left: 370px;
+    font-weight: 400;
+}
+
+.text-right{
+    position: relative;
+    left: 830px;
+    bottom: 370px;
+} 
+.ps5-right>h3{
+    font-size: 27px;
+    position: relative;
+    left: 840px;
+    font-weight: 400;
+}
+
+.cont-back{
+    height: 500px;
+    width: 100%;
+}
+
+.cont-b{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cont-text{
+    position: relative;
+    bottom: 300px;
+    text-align: start;
+}
+
+.cont-text>h1{
+    position: relative;
+    left: 50px;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.cont-text>p{
+    position: relative;
+    left: 50px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.cont-vid{
+    height: 400px;
+    width: 100%;
+    background-color: red;
+}
+
+#cont-video{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cont-two{
+    position: relative;
+    height: 950px;
+    width: 100%;
+    background-color: rgb(232, 232, 232);
+}
+
+.cont-two-heading{
+    position: relative;
+    text-align: center;
+    top: 50px;
+    color: black;  
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.cont-two-vid{
+    position: relative;
+    display: flex;
+    justify-content: space-around ;
+    top: 100px;
+}
+
+.box1{
+    border-radius: 10px;
+    height: 400px;
+    width: 550px;
+    background-color: rgb(196, 23, 23);
+}
+
+.box1>video{
+    border-radius: 10px;
+    height: 400px;
+    width: 550px;
+    object-fit: cover;
+}
+
+.box2{
+    border-radius: 10px;
+    height: 400px;
+    width: 550px;
+    background-color: rgb(23, 196, 23);
+}
+
+.box2>video{
+    border-radius: 10px;
+    height: 400px;
+    width: 550px;
+    object-fit: cover;
+}
+
+.cont-vid-text1{
+    position: relative;
+    top: 170px;
+    color: black;
+    left: 100px;
+}
+
+.cont-vid-text1>h3{
+    position: relative;
+    left: 140px;
+    bottom: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.cont-vid-text1>p{
+    position: relative;
+    left: 40px;
+    bottom: 50px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.cont-vid-text2{
+    position: relative;
+    top: 100px;
+    color: black;
+    left: 900px;
+}
+
+.cont-vid-text2>h3{
+    position: relative;
+    left: 140px;
+    bottom: 76px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.cont-vid-text2>p{
+    position: relative;
+    left: 40px;
+    bottom: 80px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.cont-two>button{
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+    left: 600px;
+    top: 70px;
+    background-color: rgb(41, 89, 161);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.cont-two>button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 10px black;
+}
+
+.cont-two>button:active{
+    scale: 0.95;
+}
+
+.cont-back-btn{
+    position: relative;
+    left: 50px;
+    top: 30px;
+    background-color: rgb(32, 29, 29);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cont-back-btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 10px rgb(52, 51, 51);
+}
+
+.cont-back-btn:active{
+    scale: 0.95;
+}
+
+.headphone{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(232, 232, 232);
+}
+
+.headphone>img{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.headphone-text{
+    position: relative;
+    bottom: 400px;
+    left: 50px;
+    color: black;
+}
+
+.headphone-text>h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.headphone-text>p{
+    color: white;
+    position: relative;
+
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.headphone-btn{
+    position: relative;
+    left: 0px;
+    top: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.headphone-btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 10px rgb(52, 51, 51);
+}
+
+.headphone-btn:active{
+    scale: 0.95;
+}
+
+.all-cont-heading{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    color: rgb(255, 253, 253);  
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.all-cont-heading>h1{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.all-cont{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    
+}
+
+.all-cont>section {
+  height: 100%;
+  flex-grow: 1;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+.all-cont>section:hover {
+  flex-grow: 6;
+}
+.all-cont>section:nth-child(1) {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/Wolverine-LE-Silver-Controller-Keyart-16x9-01-_en?$1600px$);
+}
+.all-cont>section:nth-child(2) {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/Wolverine-LE-Yellow-Controller-Keyart-16x9-01-_en?$1600px$);
+}
+.all-cont>section:nth-child(3) {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-controller-dualsense-controller-keyart-02-en-15may25?$1600px$);
+}
+.all-cont>section:nth-child(4) {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/death-stranding-2-dualsense-controller-keyart-01-en-03mar25?$1600px$);
+}
+.all-cont>section:nth-child(5) {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/Genshin-Impact-dualsense-controller-keyart-02-en-20nov25?$1600px$);
+}
+
+.about-h{
+    height: 650px;
+    width: 100%;
+    background-color: rgb(232, 232, 232);
+}
+
+.about-h-text{
+    z-index: 2;
+    position: relative;
+    top:120px;
+    left:100px;
+    color: white;
+    font-size: 25px;
+    
+}
+
+.about-h-text>h1{
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#about-h-img{
+    position: absolute;
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-h-right{
+    position: relative;
+    top: 170px;
+    left: 570px;
+    height: 350px;
+    width: 900px;
+    border-radius: 15px;
+    background-color: #1f1f1f;
+    z-index: 2;
+}
+
+.about-h-right>h3{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.about-h-right>p{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.abt-game{
+    position: relative;
+    height: 600px;
+    width: 100%;
+   
+}
+
+#abt-game-img{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+   
+}
+
+#abt-g-logo{
+    position: relative;
+    height: 200px;
+    width: auto;
+    bottom: 400px;
+    left: 655px;
+}
+
+.abt-game-text{
+    position: relative;
+    bottom: 350px;
+    opacity: 0.5;
+    text-align: center;
+    color: white;
+}
+
+.abt-games-btn{
+    position: relative;
+    bottom: 330px;
+    left: 680px;
+    font-size: 16px;
+    
+}
+
+.abt-games-btn>button{
+    background-color: rgb(26, 25, 119);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.abt-games-btn>button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 10px rgb(52, 51, 51);
+}
+
+.abt-games-btn>button:active{
+    scale: 0.95;
+}
+
+.abt-game-flex-text{
+    height: 200px;
+    position: relative;
+    text-align: center;
+    color: rgb(6, 6, 6);
+    background-color: whitesmoke;
+}
+
+.abt-game-flex-text>h1{
+    position: relative;
+    top: 50px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.abt-game-flex-text>p{
+    position: relative;
+    top: 60px;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+.abt-game-flex{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+
+.abt-game-flex>section {
+  height: 500px;
+  flex-grow: 1;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+.abt-game-flex>section:hover {
+  flex-grow: 15;
+}
+.abt-game-flex>section:nth-child(1) {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-keyart-no-logo-01-en-9mar22?$1600px$);
+}
+
+.abt-game-flex > section {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.game-info {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.game-info h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+.game-info p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 500px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.abt-game-flex > section:hover .game-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.abt-game-flex>section:nth-child(2) {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/uncharted-hub-keyart-02-en-02jun21?$1600px$);
+}
+.abt-game-flex>section:nth-child(3) {
+  background-image: url(https://imgs.search.brave.com/P5LjbupWwdODpVq0vU4HpVlB6Z7DuTOSXHlLdPsCoXA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/dWhkcGFwZXIuY29t/L3dhbGxwYXBlci9k/ZWF0aC1zdHJhbmRp/bmctMi12aWRlby1n/YW1lLTg4OUAxQG4);
+}
+.abt-game-flex>section:nth-child(4) {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/tlou-part-i-keyart-no-logo-01-en-14jul22?$1600px$);
+}
+.abt-game-flex>section:nth-child(5) {
+  background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/gt7-keyart-no-logo-01-en-9mar22?$1600px$);
+}
+
+.anv-30th{
+    height:500px;
+    width: 100%;
+
+}
+
+#anv-30th-back{
+    height: 500px;
+    width: 100%;
+}
+
+#anv-30th-logo{
+    position: relative;
+    bottom: 430px;
+    left: 900px;
+    height: 300px;
+    width: 480px;
+}
+
+.anv-30th-text{
+    position: relative;
+    bottom: 600px;
+    left: 100px;
+    color: #000;
+}
+.anv-30th-text>h1{
+    position: relative;
+    bottom: 50px;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.anv-30th-text>p{
+    position: relative;
+    font-weight: 400;
+    bottom: 40px;
+}
+
+.anv-30th-btn{
+    position: relative;
+    bottom: 600px;
+    left: 6.3rem;
+}
+
+.anv-btn{
+        background-color: #00439c;
+        padding: 15px;
+        border-radius: 70px;
+        color: white ;
+        font-size: 15px;
+        border: none;
+        
+}
+
+.anv-btn:hover{
+    transform: translateY(-4PX);
+    box-shadow: 0PX 10px 10px #000;
+}
+
+.anv-btn:active{
+    scale: 0.95;
+}
+
+.contact-section {
+    width: 100%;
+    min-height: 520px;
+    background: #fff;
+    text-align: center;
+    padding-top: 95px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.contact-section h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 300;
+    color: #111;
+    letter-spacing: -1px;
+}
+
+
+.contact-content {
+    margin-top: 105px;
+}
+
+
+.contact-content h2 {
+    margin: 0 0 24px;
+    font-size: 32px;
+    font-weight: 300;
+    color: #111;
+}
+
+
+.contact-content p {
+    margin: 0 auto 28px;
+    max-width: 850px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #555;
+}
+
+
+.support-btn {
+    display: inline-block;
+    padding: 15px 23px;
+    background: #0878d1;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+
+
+}
+
+.support-btn:hover {
+    background: #006fca;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+ /* news */
+.news-sec-1 {
+    width: 100%;
+    height: 1390px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+.news-header {
+    width: 100%;
+    height: 1390px;
+    position: relative;
+    overflow: visible;
+}
+
+
+.news-sec-1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #fff;
+}
+
+.news-header {
+    width: 100%;
+    height: 1390px;
+    position: relative;
+    overflow: visible;
+}
+
+#nhh-i {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.n-hp {
+    height: 1000px;
+    width: 100%;
+}
+
+.nhp-back {
+    height: 1358px;
+    width: 100%;
+    object-position: left;
+    object-fit: cover;
+}
+
+.hpb-text {
+    position: relative;
+    height: 130px;
+    bottom: 1200px;
+    left: 600px;
+}
+
+.n-right-card > img {
+    position: relative;
+    bottom: 650px;
+    left: 60px;
+    height: 400px;
+    width: 700px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.6s ease;
+}
+
+.n-left-text {
+    position: relative;
+    bottom: 1050px;
+    left: 800px;
+}
+
+.n-left-text > h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.n-left-text > h3 {
+    font-size: 17px;
+    background-color: #141313;
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.n-left-text > p {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.n-left-text > h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.n-left-text > button {
+    position: relative;
+    right: 0px;
+    top: 15px;
+    background: #ffffff;
+    color: #080808 !important;
+    text-decoration: none !important;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.n-left-text > button:hover {
+    background: #f1f1f1;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.n-left-text > button:active {
+    transform: scale(0.95);
+}
+
+.ngcard-2nd {
+    position: relative;
+    bottom: 240px;
+}
+
+.n-right-card:hover img {
+    transform: scale(1.030);
+}
+
+
+.ns2-header{
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.ns2-header h1{
+    position: relative;
+    top: 50px;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.ns2-header p{
+    position: relative;
+    top: 60px;
+    opacity: 0.6;
+    
+}
+
+.ns2-header img{
+    position: relative;
+    top: 100px;
+    height: 50px;
+    width: 800px;
+}
+
+/* GAMES */
+
+.sec2-games{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+/* EACH GAME */
+
+.sec2-game{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+
+/* IMAGE */
+
+.sec2-img{
+    width: 52%;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.sec2-img img{
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.sec2-img:hover img{
+    transform: scale(1.04);
+}
+
+
+/* TEXT */
+
+.sec2-content{
+    flex: 1;
+    color: black;
+}
+
+.sec2-content h2{
+    font-size: 34px;
+    margin: 0 0 18px;
+    color: black;
+}
+
+.sec2-content p{
+    color: black;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 0 28px;
+    max-width: 500px;
+}
+
+
+/* BUTTON */
+
+.sec2-content button{
+    border: none;
+    background: #040404;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.sec2-content button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.sec2-content button:active{
+    transform: scale(0.95);
+}
+
+
+/* =========================
+   ALTERNATE ROW
+========================= */
+
+.sec2-game:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.sect2-games{
+    height: 1500px;
+    background-color: white;
+}
+
+#sc2-t{
+    position: relative;
+    left: 40px;
+}
+
+.sec2-img{
+    position: relative;
+    left: 40px;
+}
+
+#sec2-even{
+    position: relative;
+    right: 200px;
+}
+
+.sect3-games{
+    height: 1400px;
+    width: 100%;
+    background-color: #26254f;
+}
+
+.game-news-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 20px;
+}
+
+.news-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left Media Card Styles */
+.news-media {
+    flex: 1;
+    min-width: 320px;
+}
+
+.media-card {
+    position: relative;
+    bottom: 230px;
+    left: 40px;
+    width: 700px;
+    height: 410px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: #000;
+   
+}
+
+
+
+#mc-i{
+  object-fit: cover;
+  object-position: out;
+}
+
+.sec3-back img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+
+/* Right Content Styles */
+.news-content {
+    position: relative;
+    left: 230px;
+    bottom: 100px;
+    flex: 1.2;
+    min-width: 350px;
+}
+
+.category-tag {
+    font-size: 13px;
+    color: #d1c4e9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.game-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 8px 0 20px 0;
+    color: #ffffff;
+}
+
+/* Info Grid Box */
+.info-grid {
+    display: flex;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.info-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item .label {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.info-item .value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Descriptions */
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 12px;
+}
+
+/* Similar Games */
+.similar-games {
+    font-size: 13px;
+    color: #ccc;
+    margin: 20px 0;
+}
+
+.similar-games a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin-left: 2px;
+}
+
+.similar-games a:hover {
+    color: #b388ff;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* Layout ko ulta karne ke liye (Left content, Right video) */
+.news-container.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .news-container.reverse-layout {
+        flex-direction: column;
+    }
+}
+
+/* Info grid jisme teeno items ek hi line mein hain image ke mutabiq */
+.info-grid.single-row-grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+}
+
+.media-card {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Aap apne zaroorat ke hisab se height adjust kar sakte hain */
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Yeh image ko bina distortion ke box mein perfectly fit karega */
+    object-position: center}
+
+#phtm{
+    position: relative;
+    top: 120px;
+    left: -0px;
+}
+
+.ns3-h{
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ns3-h h1{
+    position: relative;
+    top: 10px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.nsl {
+    height: 450px;
+    width: 100%;
+    background-color: #9d57f5;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.nsl-content {
+    width: 30%;
+    padding: 0 40px;
+    color: #ffffff;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editors-badge {
+    margin-bottom: 15px;
+}
+
+/* Logo image ki width aur height set karne ke liye */
+.editors-logo {
+    width: 180px; /* Aap apni zaroorat ke hisab se width kam ya zyada kar sakte hain */
+    height: auto;
+    display: block;
+}
+
+.nsl-desc {
+    font-size: 13.5px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #f0e6ff;
+}
+
+.nsl-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.2s;
+}
+
+.nsl-btn:hover {
+    background-color: #e0e0e0;
+}
+
+#nsl-back {
+    height: 450px;
+    width: 70%;
+    object-fit: cover;
+    object-position: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* Community */
+
+.com-header{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(29, 29, 150);
+    text-align: center;
+    border-bottom: 4px solid rgba(22, 15, 96, 0.686) ;
+}
+
+.com-header h1{
+    position: relative;
+    top: 25px;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: tc;
+    letter-spacing: 5px;
+}
+
+.com-header p{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+.com-header h3{
+    position: relative;
+    top: 38px;
+    right: 17px;
+    font-size: 20px;
+    opacity: 0.7;
+    font-family: ab;
+}
+
+.com-home{
+   
+    height: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     anchor-name: --some-anchor;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+
+}
+.box:hover{
+     anchor-name: --some-anchor;
+}
+
+.red{ 
+     border-radius: 15px;
+    position: relative;
+    z-index: 10;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+}
+
+.red h1{
+    text-transform: uppercase;
+    margin-top: 15px;
+    opacity: 0;
+}
+
+.red p{
+    font-size: 19px;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.red:hover h1{
+    opacity: 1;
+}
+
+.red:hover p{
+    opacity: 1;
+}
+
+.red img {
+    
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* Yeh image ko bina kate, poori ki poori andar fit kar dega */
+}
+.blue{
+     text-align: center;
+     height: 400px;
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+.blue h1{
+    text-transform: uppercase;
+    margin-top: 15px;
+    opacity: 0;
+}
+
+.blue p{
+    font-size: 19px;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.blue:hover h1{
+    opacity: 1;
+}
+
+.blue:hover p{
+    opacity: 1;
+}
+
+.blue img {
+   
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* Yeh image ko bina kate, poori ki poori andar fit kar dega */
+}
+.green{
+    text-align: center;
+     height: 400px;
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+
+.green h1{
+    text-transform: uppercase;
+    margin-top: 15px;
+    opacity: 0;
+}
+
+.green p{
+    font-size: 19px;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.green:hover h1{
+    opacity: 1;
+}
+
+.green:hover p{
+    opacity: 1;
+}
+
+.green img {
+    
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* Yeh image ko bina kate, poori ki poori andar fit kar dega */
+}
+.anchor{
+    background: whitesmoke;
+    border-radius: 15px;
+    position: absolute;
+    top: anchor(top);
+    left: anchor(left);
+    bottom: anchor(bottom);
+    right: anchor(right);
+    pointer-events: none;
+    position-anchor: --some-anchor;
+    transition: all 0.3s linear;
+    mix-blend-mode:exclusion;
+}
+
+#com-homeh1{
+    position: relative;
+    top: 140px;
+}
+
+.com-sec2{
+    height: 750px;
+    width: 100%;
+    background-color: #000;
+}
+
+.com-sec2-head{
+
+     height: 380px;
+     width: 100%;
+     font-size: 80px;
+
+     line-height: 140px;
+}
+
+.com-sec2-head h1{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing:-2px;
+}
+
+.cards-container {
+    height: 270px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Individual Card Styling */
+.tech-card {
+    background: #121215;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 30px 25px;
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover or Active State Glow */
+.tech-card:hover, .tech-card.active {
+    border-color: #294cb7; /* Neon yellow-green accent */
+    box-shadow: 0 0 20px rgba(191, 255, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+.card-num {
+    color: #1e61c5c2;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.tech-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.tech-card p {
+    font-size: 14px;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+#cs2-btn{
+    position: relative;
+    left: 700px;
+    top: 10px;
+   background-color: #ffffff; /* Classic PlayStation white button */
+    color: #000000;            /* Black bold text */
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;       /* Smooth pill/capsule shape */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+#cs2-btn:hover{
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+#cs2-btn:active{
+    transform: translateY(1px);
+}
+
+.com-sec3{
+    height: 650px;
+    width: 100%;
+}
+
+.com-sec3-head{
+    height: 220px;
+    text-align: center;
+    
+}
+
+.com-sec3-head h3{
+    position: relative;
+    top: 60px;
+    font-size: 40px;
+}
+
+.com-sec3-head h1{
+    position: relative;
+    top: 60px;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: tc;
+}
+
+.leaderboard-container {
+            width: 100%;
+            max-width: 850px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Rank Card */
+        .rank-card {
+            background: #121215;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.7s ease;
+        }
+
+        /* Top 1 Highlight Card */
+        .rank-card.active {
+            border-color: #203b9f;
+            background: linear-gradient(90deg, #18200d, #121215);
+            box-shadow: 0 0 25px rgba(191, 255, 0, 0.12);
+        }
+
+        /* Left Side Content */
+        .user-left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .rank-number {
+            font-size: 24px;
+            font-weight: 800;
+            color: #777777;
+            width: 35px;
+        }
+
+        .active .rank-number {
+            color: #162eb5;
+        }
+
+        .avatar-circle {
+            width: 55px;
+            height: 55px;
+            background: #1a1a1e;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .user-meta h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 800;
+            color: #1a6cd0e1;
+            background: rgba(21, 115, 169, 0.12);
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+        }
+
+       
+        .user-right {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            text-align: right;
+        }
+
+        .stat-group label {
+            display: block;
+            font-size: 10px;
+            font-weight: 700;
+            color: #777777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 3px;
+        }
+
+        .stat-group .stat-value {
+            font-size: 18px;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .com-sec3-line{
+            position: relative;
+            left: 330px;
+        }
+
+        .rank-card.active {
+            border-color: #175fb8;
+            background: linear-gradient(90deg, #18200d, #121215);
+            box-shadow: 0 0 25px rgba(18, 61, 201, 0.616);
+        }
+
+        
+        .rank-card:hover {
+            transform: translateX(-8px); 
+            border-color: #527cd1;   
+            background: linear-gradient(90deg, #161c0e, #121215);
+            box-shadow: 0 8px 30px rgba(13, 78, 191, 0.534); 
+        }
+
+        #cs3-btn{
+            position: relative;
+            top: 30px;
+            left: 340px;
+            background: linear-gradient(135deg, #0070d1, #00439c); 
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 112, 209, 0.3);
+    transition: all 0.3s ea
+        }
+
+#cs3-btn:hover{
+    background: linear-gradient(135deg, #0081f1, #0051bb);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 112, 209, 0.5);
+}
+
+#cs3-btn:active{
+    transform: translateY(1px);
+}
+
+.com-last{
+    height: 530px;
+}
+
+/* Form Container */
+        .join-container {
+            background: black;
+            border-radius: 16px;
+            padding: 40px;
+            width: 100%;
+            max-width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+     
+        
+
+        /* Header */
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-header h2 {
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            font-family: tc;
+        }
+
+        .form-header p {
+            font-size: 14px;
+            color: #888888;
+        }
+
+     
+        .input-group {
+            position: relative;
+            left: 465px;
+            width: 500px;
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            
+            display: block;
+            font-size: 11px;
+            font-weight: 700;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+      
+        .input-group input, 
+        .input-group select {
+            width: 100%;
+            background: #1a1a1e;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            padding: 14px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+       
+        .input-group input:hover, 
+        .input-group select:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .input-group input:focus, 
+        .input-group select:focus {
+            border-color: #0070d1;
+            background: #121215;
+            box-shadow: 0 0 15px rgba(0, 112, 209, 0.2);
+        }
+
+        
+        .blue-btn {
+            position: relative;
+            left: 466px;
+            background: linear-gradient(135deg, #0070d1, #00439c);
+            color: #ffffff;
+            border: none;
+            padding: 14px;
+            border-radius: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            width: 500px;
+            margin-top: 10px;
+            box-shadow: 0 4px 15px rgba(0, 112, 209, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .blue-btn:hover {
+            background: linear-gradient(135deg, #0081f1, #0051bb);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 112, 209, 0.5);
+        }
+
+        .blue-btn:active {
+            transform: translateY(1px);
+        }
 
